@@ -3,9 +3,14 @@
 .nav-bot {
     max-width: 100%;
     padding: 0;
+    background-color: black;
 }
 .nav-top {
     max-width: 100%;
+    background-color: green;
+}
+.nav-bot > .container a {
+    color: white;
 }
 .navbar > .container, .navbar {
     margin: 0;
