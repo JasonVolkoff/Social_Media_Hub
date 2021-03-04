@@ -31,9 +31,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 
     <link rel="stylesheet" href="styles.css">
-
 
 </head>
 
@@ -86,15 +86,36 @@
 
         <div class="row">
             <div class="col-3 mainBodyLeft">
-                <div class="aboutMe mb-4">
-                    <h1>About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ducimus eaque dolor beatae
-                        officiis excepturi id, reprehenderit repudiandae ex accusantium distinctio maxime cupiditate
-                        officia
-                        aut!</p>
+                <div class="row">
+                    <form class="bodyBorder">
+                        <div class="form-group">
+                            <label for="username"></label>
+                            <input type="text" class="form-control" id="username" placeholder="Your Username">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon">
+                                <input type="text" class="form-control" placeholder="0.00">
+                                <i>$</i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="textareaChars" maxlength="256"
+                                placeholder="Donation Message"></textarea>
+                            <span id="chars">256</span><span>/256</span>
+                        </div>
+                    </form>
                 </div>
-                <div class="social-menu row p-1">
-                    <ul>
+                <div class="row aboutMe mb-3 mt-4">
+                    <div class="bodyBorder">
+                        <h1>About Me</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ducimus eaque dolor beatae
+                            officiis excepturi id, reprehenderit repudiandae ex accusantium distinctio maxime cupiditate
+                            officia
+                            aut!</p>
+                    </div>
+                </div>
+                <div class="social-menu row p-1 d-flex justify-content-center">
+                    <ul class="d-flex justify-content-around">
                         <li><a href=""><i class="fa fa-facebook"></i></a></li>
                         <li><a href=""><i class="fa fa-twitter"></i></a></li>
                         <li><a href=""><i class="fa fa-instagram"></i></a></li>
@@ -102,11 +123,18 @@
                         <li><a href=""><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
+
             </div>
             <div class="col-9 mainBodyRight">
-                <iframe src="https://player.twitch.tv/?channel=tudyjr&parent=localhost" parent="localhost" height="300"
-                    width="400" allowfullscreen="true">
-                </iframe>
+                <div class="bodyBorder">
+                    <div>
+                        <iframe src="https://player.twitch.tv/?channel=tudyjr&parent=localhost" parent="localhost"
+                            height="100%" width="100%" allowfullscreen="true">
+                        </iframe>
+                        <hr />
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
