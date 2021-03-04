@@ -42,22 +42,23 @@
         <div class="container container-fluid d-flex flex-column">
             <div class="nav-top container">
                 <div class="container">
-                    <h1>Schedule</h1>
+                    <h2>Schedule<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-calendar-range align-content-center ml-2 pb-1" viewBox="0 0 16 16">
+                            <path d="M9 7a1 1 0 0 1 1-1h5v2h-5a1 1 0 0 1-1-1zM1 9h4a1 1 0 0 1 0 2H1V9z" />
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                        </svg></h2>
                     <div>Monday<br>6:00-10:00pm</div>
-                    <div>Monday<br>6:00-10:00pm</div>
-                    <div>Monday<br>6:00-10:00pm</div>
-                    <div>Monday<br>6:00-10:00pm</div>
-                    <div>Monday<br>6:00-10:00pm</div>
+                    <div>Tuesday<br>6:00-10:00pm</div>
+                    <div>Wednesday<br>6:00-10:00pm</div>
+                    <div>Thursday<br>6:00-10:00pm</div>
+                    <div>Friday<br>6:00-10:00pm</div>
                 </div>
 
             </div>
             <div class="nav-bot container">
                 <div class="container" id="navbarSupportedContent">
-                    <a class="navbar-brand" href="#">
-                        <img src="https://cdn3.iconfinder.com/data/icons/ringtone-music-instruments/512/letter-t-key-keyboard-2-512.png"
-                            width="30" height="30" class="d-inline-block align-top" alt="">
-                        tudyjr
-                    </a>
+
                     <a class="nav-item nav-link active" href="#">
                         HOME
                         <span class="sr-only">(current)</span>
@@ -65,17 +66,23 @@
                     <a class="nav-item nav-link" href="#">
                         DONATE
                     </a>
-                    <div class="dropdown nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            ENGLISH
+                    <a class="navbar-brand mr-0" href="#">
+                        <img src="https://cdn3.iconfinder.com/data/icons/ringtone-music-instruments/512/letter-t-key-keyboard-2-512.png"
+                            width="35" height="35" alt="Icon">
+                        <h1>TudyJr</h1>
+                    </a>
+                    <div>
+                        <a class="nav-link disabled pb-0 d-flex flex-column text-center" href="#">
+                            MERCH
+
                         </a>
+                        <span id="soon">Coming Soon!</span>
                     </div>
 
 
-                    <form id="demo-2">
-                        <input type="search" placeholder="Search">
-                    </form>
+                    <a class="nav-item nav-link" href="#">
+                        CONTACT
+                    </a>
 
 
                 </div>
@@ -85,7 +92,7 @@
     <div class="main-body container">
 
         <div class="row">
-            <div class="col-3 mainBodyLeft">
+            <div class="col-lg-3 col-md-4 col-sm-12 order-2-sm mainBodyLeft">
                 <div class="row">
                     <form class="bodyBorder">
                         <div class="form-group">
@@ -99,10 +106,27 @@
                             </div>
                         </div>
                         <div class="form-group">
+
                             <textarea class="form-control" id="textareaChars" maxlength="256"
                                 placeholder="Donation Message"></textarea>
-                            <span id="chars">256</span><span>/256</span>
+                            <div class="float-right">
+                                <span id="chars">256</span><span>/256</span>
+                            </div>
                         </div>
+                        <div class="form-group formURL">
+                            <label for="shareMedia">Share Media</label>
+                            <input type="text" class="form-control" id="shareMedia" placeholder="Youtube Video URL...">
+                        </div>
+                        <div class="form-group formTime">
+                            <label for="appt">Start Time</label>
+                            <input class="form-control" type="time" id="appt" name="appt" min="00:00" max="24:00"
+                                placeholder="Start Time" required>
+                        </div>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="something" class="button4" style="background-color:#054225">DONATE</a>
+                        </div>
+
+
                     </form>
                 </div>
                 <div class="row aboutMe mb-3 mt-4">
@@ -125,7 +149,7 @@
                 </div>
 
             </div>
-            <div class="col-9 mainBodyRight">
+            <div class="col-lg-9 col-md-8 col-sm-12 order-1-sm  mainBodyRight">
                 <div class="bodyBorder">
                     <div>
                         <iframe src="https://player.twitch.tv/?channel=tudyjr&parent=localhost" parent="localhost"
@@ -137,7 +161,9 @@
                 </div>
             </div>
         </div>
+        <hr />
     </div>
+
 
 </body>
 
