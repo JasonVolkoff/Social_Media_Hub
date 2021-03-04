@@ -5,15 +5,19 @@
     padding: 0;
     background-color: black;
 }
-#soon {
-    font-size: 10px;
-}
+
 .nav-top {
     max-width: 100%;
     background-color: seagreen;
 }
+#navbarSupportedContent .icon {
+    display: none;
+}
 .nav-bot > .container .nav-item {
     color: white;
+}
+.nav-bot > .myNav {
+    overflow:hidden;
 }
 .nav-bot > .container > div {
     padding: auto;
@@ -24,6 +28,7 @@
     max-width: 100%;
 }
 #soon {
+    font-size: 10px;
     color: white;
     margin-left: auto;
     margin-right: auto;
@@ -51,6 +56,10 @@
     margin: auto;
     display: block;
 }
+.navbar-brand {
+    margin-right: 0;
+}
+
 
 /* MAIN BODY */
 body {
@@ -207,4 +216,29 @@ a.button4:hover{
     a.button4{
         display:block;
         margin:0.2em auto;
-    }}
+    }
+}
+@media only screen and (max-width: 960px) {
+    .container > .nav-top {
+        display: none;
+    }
+}
+@media only screen and (max-width: 780px) {
+    
+    
+    .myNav > .navbar-brand {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .social-menu {
+        margin-bottom: 10px;
+    }
+    .main-body > .row {
+        margin-top: 10px
+    }
+    .myNav > a:not(.navbar-brand), .myNav > div {
+        display: none;
+    }
+}
+

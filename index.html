@@ -57,7 +57,7 @@
 
             </div>
             <div class="nav-bot container">
-                <div class="container" id="navbarSupportedContent">
+                <div class="container myNav" id="navbarSupportedContent">
 
                     <a class="nav-item nav-link active" href="#">
                         HOME
@@ -66,7 +66,7 @@
                     <a class="nav-item nav-link" href="#">
                         DONATE
                     </a>
-                    <a class="navbar-brand mr-0" href="#">
+                    <a class="navbar-brand" href="#">
                         <img src="https://cdn3.iconfinder.com/data/icons/ringtone-music-instruments/512/letter-t-key-keyboard-2-512.png"
                             width="35" height="35" alt="Icon">
                         <h1>TudyJr</h1>
@@ -91,8 +91,8 @@
     </div>
     <div class="main-body container">
 
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-12 order-2-sm mainBodyLeft">
+        <div class="row flex-wrap-reverse">
+            <div class="col-lg-3 col-md-4 col-sm-12 mainBodyLeft">
                 <div class="row">
                     <form class="bodyBorder">
                         <div class="form-group">
@@ -149,22 +149,37 @@
                 </div>
 
             </div>
-            <div class="col-lg-9 col-md-8 col-sm-12 order-1-sm  mainBodyRight">
+            <div class="col-lg-9 col-md-8 col-sm-12 mainBodyRight">
                 <div class="bodyBorder">
                     <div>
                         <iframe src="https://player.twitch.tv/?channel=tudyjr&parent=localhost" parent="localhost"
                             height="100%" width="100%" allowfullscreen="true">
                         </iframe>
                         <hr />
-
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe consectetur temporibus
+                                inventore odit
+                                id et consequatur mollitia magnam, debitis porro similique quasi culpa natus a sed nobis
+                                minima cumque.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <hr />
+
     </div>
 
+    <script>
+        var maxLength = 256;
+        $('textarea').keyup(function () {
+            var length = $(this).val().length;
+            var length = maxLength - length;
+            $('#chars').text(length);
+        });
 
+    </script>
 </body>
 
 </html>
