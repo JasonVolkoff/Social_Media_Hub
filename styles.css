@@ -94,6 +94,9 @@ hr {
 .mainBodyRight > .bodyBorder > div > iframe {
     border-radius: 7px;
 }
+.bodyBorder > hr {
+    margin-top: 8px;
+}
 /* VIDEO/MEDIA */
 
 /* SOCIAL MEDIA ICONS */
@@ -239,6 +242,22 @@ a.button4:hover{
     }
     .myNav > a:not(.navbar-brand), .myNav > div {
         display: none;
+    }
+    .bodyBorder > div > iframe {
+        height: 300px;
+    }
+    .bodyBorder > div p {
+        font-size: 14px;
+    }
+    .mainBodyRight {
+        padding: 0;
+        margin-bottom: 24px;
+    }   
+}
+
+@media only screen and (max-width: 320px) {
+    .bodyBorder > div p {
+        font-size: 12px;
     }
 }
 
