@@ -54,11 +54,9 @@
                     <div>Thursday<br>6:00-10:00pm</div>
                     <div>Friday<br>6:00-10:00pm</div>
                 </div>
-
             </div>
             <div class="nav-bot container">
                 <div class="container myNav" id="navbarSupportedContent">
-
                     <a class="nav-item nav-link active" href="#">
                         HOME
                         <span class="sr-only">(current)</span>
@@ -66,31 +64,28 @@
                     <a class="nav-item nav-link" href="#">
                         DONATE
                     </a>
-                    <a class="navbar-brand" href="#">
-                        <img src="https://cdn3.iconfinder.com/data/icons/ringtone-music-instruments/512/letter-t-key-keyboard-2-512.png"
-                            width="35" height="35" alt="Icon">
-                        <h1>TudyJr</h1>
-                    </a>
+                    <div id="myBrand">
+                        <a class="navbar-brand" href="#">
+                            <img src="https://cdn3.iconfinder.com/data/icons/ringtone-music-instruments/512/letter-t-key-keyboard-2-512.png"
+                                width="35" height="35" alt="Icon">
+                            <h1>TudyJr</h1>
+                        </a>
+                    </div>
+
                     <div>
                         <a class="nav-link disabled pb-0 d-flex flex-column text-center" href="#">
                             MERCH
-
                         </a>
                         <span id="soon">Coming Soon!</span>
                     </div>
-
-
                     <a class="nav-item nav-link" href="#">
                         CONTACT
                     </a>
-
-
                 </div>
             </div>
         </div>
     </div>
     <div class="main-body container">
-
         <div class="row flex-wrap-reverse">
             <div class="col-lg-3 col-md-4 col-sm-12 mainBodyLeft">
                 <div class="row">
@@ -106,7 +101,6 @@
                             </div>
                         </div>
                         <div class="form-group">
-
                             <textarea class="form-control" id="textareaChars" maxlength="256"
                                 placeholder="Donation Message"></textarea>
                             <div class="float-right">
@@ -119,14 +113,12 @@
                         </div>
                         <div class="form-group formTime">
                             <label for="appt">Start Time</label>
-                            <input class="form-control" type="time" id="appt" name="appt" min="00:00" max="24:00"
-                                placeholder="Start Time" required>
+                            <input class="form-control" type="time" id="appt" name="appt" min="00:00" max="23:59"
+                                required>
                         </div>
                         <div class="d-flex justify-content-center mb-2">
                             <a href="something" class="button4" style="background-color:#054225">DONATE</a>
                         </div>
-
-
                     </form>
                 </div>
                 <div class="row aboutMe mb-3 mt-4">
@@ -149,14 +141,24 @@
                         <li><a href=""><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
-
             </div>
             <div class="col-lg-9 col-md-8 col-sm-12 mainBodyRight">
                 <div class="bodyBorder">
                     <div>
-                        <iframe src="https://player.twitch.tv/?channel=tudyjr&parent=localhost" parent="localhost"
-                            height="100%" width="100%" allowfullscreen="true">
-                        </iframe>
+                        <div class="container">
+
+                            <!-- Attempted to add embed link from twitch.tv live feed account (see below). Requires a live website with a SSL certificate. Inserted dummy/placeholder video (see above) instead. -->
+
+                            <!-- <iframe
+                                class="responsive-iframe" src="https://player.twitch.tv/?tudyjr&parent=localhost"
+                                height="100%" width="100%" allowfullscreen="true">
+                            </iframe> -->
+
+                            <!-- placeholder video below -->
+                            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/f02mOEt11OQ">
+                            </iframe>
+
+                        </div>
                         <hr />
                         <div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe consectetur temporibus
@@ -170,9 +172,7 @@
             </div>
         </div>
         <hr />
-
     </div>
-
     <script>
         var maxLength = 256;
         $('textarea').keyup(function () {
@@ -180,7 +180,6 @@
             var length = maxLength - length;
             $('#chars').text(length);
         });
-
     </script>
 </body>
 
