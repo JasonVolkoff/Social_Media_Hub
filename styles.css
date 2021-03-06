@@ -40,7 +40,7 @@
     padding-left: 50px;
     padding-right: 50px;
 }
-.nav-top > .container > div, {
+.nav-top > .container {
     color: white;
     text-align: center;
 }
