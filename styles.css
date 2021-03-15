@@ -90,6 +90,7 @@ hr {
 }
 .mainBodyRight > .bodyBorder > div > iframe {
     border-radius: 7px;
+    box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
 }
 .bodyBorder > hr {
     margin-top: 8px;
