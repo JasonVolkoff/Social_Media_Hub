@@ -1,2 +1,3 @@
-# Basic_eCommerce
-Basic e-commerce structure
+#Social Media Hub
+
+Social media hub template for online streamers
